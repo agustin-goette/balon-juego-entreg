@@ -1,0 +1,11 @@
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+} 
+
+$color-principal:black;
+$color-secundario:white;
+$color-terciario:rgba(255, 0, 0, 0.158);
+
+$colores: black,white,red,

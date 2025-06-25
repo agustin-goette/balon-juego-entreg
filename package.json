@@ -1,0 +1,20 @@
+{
+  "name": "balon-juego",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agustin-goette/balon-juego-entreg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agustin-goette/balon-juego-entreg/issues"
+  },
+  "homepage": "https://github.com/agustin-goette/balon-juego-entreg#readme",
+  "description": ""
+
+}

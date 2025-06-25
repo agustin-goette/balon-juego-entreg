@@ -1,0 +1,33 @@
+footer {
+    ul {
+        @include flex(flex, space-evenly, center);
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $color-secundario;
+            }
+        }
+    }
+
+
+
+    div {
+        @include flex(flex, space-between, center);
+        position: relative;
+        bottom: 50px;
+
+
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin: 15px;
+
+
+    }
+
+}
