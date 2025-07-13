@@ -2,45 +2,50 @@
     border: solid black;
     @include flex(flex, space-evenly, center);
     background-color: white;
+    height: 585px;
+
 
     img {
-        width: 750px;
-        height: 500px;
+        width: 100%;
+        height: 580px;
         object-fit: cover;
+
     }
 
     div {
-        @include flex(flex, space-evenly, center);
+        @include flex(flex, start, center);
         flex-direction: column;
         width: 50%;
+        margin: 0px 0px 80px 0px;
 
         h2 {
-            font-size: 80px;
+            font-size: 45px;
             text-decoration: underline red;
-            color: nth($colores,1);
+            color: nth($colores, 1);
+            margin: 15px;
         }
 
         p {
-            font-size: 30px;
+            font-size: 25px;
+            padding: 25px;
         }
     }
 }
 
 section {
     h2 {
-        color:nth($colores,1);
+        color: nth($colores, 2);
         text-decoration: underline red;
         text-align: center;
         margin: 30px;
+        font-size: 45px
     }
 
     div {
         @include flex(flex, space-evenly, center);
 
         article {
-            border: solid 3px black;
             background-color: white;
-            height: 100%;
             margin: 20px;
             text-align: center;
             transition: 1s;
@@ -52,16 +57,22 @@ section {
 
 
             img {
-                width: 380px;
-                height: 480px;
+                width: 100%;
+                height: 500px;
+
+            }
+
+            h3 {
+                font-size: 25px;
+                font-weight: 900;
             }
 
             a {
-                font-size: 20px;
-                color:nth($colores, 1 );
+                font-size: 15px;
+                color: nth($colores, 1);
                 text-decoration: none;
                 background-color: white;
-                
+
 
 
                 &:hover {
@@ -71,18 +82,19 @@ section {
         }
 
         article {
-            border: solid 4px black;
+            border: solid black;
             background-color: white;
             width: 388px;
-            height: 100%;
+            height: 580px;
             margin: 20px;
             text-align: center;
 
             a {
-                font-size: 20px;
-                color:nth($colores ,2 );
+                font-size: 15px;
+                color: nth($colores , 2);
                 text-decoration: none;
                 background-color: black;
+                padding: 2px;
             }
         }
     }
@@ -93,10 +105,10 @@ section {
 
     article {
         width: 388px;
-        height: 100%;
+        height: 580px;
         margin: 20px;
         text-align: center;
-        border: solid 4px black;
+        border: solid black;
         background-color: white;
         transition: 1s;
 
@@ -105,15 +117,22 @@ section {
         }
 
         img {
-            width: 380px;
-            height: 480px;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 25px;
+            font-weight: 900;
         }
 
         a {
-            font-size: 20px;
-            color:nth($colores, 2 );
+            font-size: 15px;
+            color: nth($colores, 2);
             text-decoration: none;
             background-color: black;
+            padding: 2px;
 
             &:hover {
                 background-color: red;
@@ -125,18 +144,30 @@ section {
 }
 
 .ultimastablas {
-    margin: 5px;
+    margin: 50px 20px 50px 20px;
     @include flex(flex, space-between, center);
 
     article {
         border: solid black;
         background-color: white;
+        width: 340px;
 
         h2 {
-            color:nth($colores, 1 );
+            font-size: 30px;
+            color: nth($colores, 1);
         }
-        li{
-            font-weight: bolder
+
+        li {
+            font-weight: bolder;
+
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 260px;
+            bottom: 20px;
         }
     }
 }
@@ -148,25 +179,26 @@ section {
     h4 {
         background-color: black;
         color: white;
+        padding: 5px;
     }
 
-    h5 {
-        a {
-            background-color: black;
-            text-decoration: none;
-            color: rgb(248, 246, 246);
-            transition: 0.5s;
-        }
+    a {
+        background-color: black;
+        text-decoration: none;
+        color: rgb(248, 246, 246);
+        transition: 0.5s;
+        padding: 3px;
     }
 }
 
 .video {
     @include flex (flex, center, center);
     flex-direction: column;
+    margin: 50px;
 
 
     h2 {
-        color:nth($colores,1 );
+        color: nth($colores, 2);
         padding: 5px;
         margin: 10px;
     }
@@ -177,10 +209,8 @@ section {
     width: 100%;
     height: 600px;
 
-    h5 {
-        & :hover {
-            background-color: red;
-        }
+    & :hover {
+        background-color: red;
     }
 }
 
@@ -188,26 +218,25 @@ section {
 
 
 .tienda-destacado {
+
     h2 {
-        margin: 50px;
-        font-size: 40px;
+        font-size: 45px;
         text-align: center;
 
     }
 
     p {
-        color: $color-principal;
-        font-size: 30px;
+        color: $color-secundario;
+        font-size: 25px;
+        padding: 30px;
     }
 
     div {
-        display: flex;
-
         article {
             border: solid black;
             background-color: white;
             width: 350px;
-            height: 500px;
+            height: 550px;
             margin: 20px;
             transition: 1s;
 
@@ -222,9 +251,14 @@ section {
             }
 
             p {
-                
-                font-size: 25px;
+
+                font-size: 20px;
                 color: black;
+                padding: 5px;
+            }
+
+            h3 {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
 
             a {
@@ -235,13 +269,30 @@ section {
     }
 }
 
+.info-compra {
+    margin: 20px;
+
+    p {
+        color: white;
+
+        img {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 100%;
+            margin: 5px;
+        }
+    }
+}
+
 /*!--------Noticias---------*/
 .noticias {
     @include flex (flex, center, center);
     flex-direction: column;
 
     h2 {
-        font-size: 40px;
+        color: $color-secundario;
+        font-size: 45px;
     }
 
     article {
@@ -250,42 +301,60 @@ section {
         border: solid $color-principal;
         @include flex (flex, center, center);
         flex-direction: row-reverse;
+        width: 850px;
+
 
         div {
             flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 500px;
 
             h2 {
-                font-size: 60px;
+                color: $color-principal;
+                font-size: 45px;
             }
 
             p {
-                font-size: 40px;
+                font-size: 20px;
+                padding: 40px;
             }
         }
 
         img {
             height: 100%;
-            width: 350px;
+            width: 500px;
         }
     }
+
 }
 
 /*!--------seleccion---------*/
 
-.info-argentina{
-    h2{
-        color: $color-principal;
+.info-argentina {
+    h2 {
+
+        font-size: 45px;
+        color: $color-secundario;
     }
-        li{
-            color: $color-principal;
-            font-size: 20px;
-        }
-    
-        li{
-            color: $color-principal;
-            font-size: 20px;
-        }
+
+    li {
+
+        color: $color-secundario;
+        font-size: 20px;
+    }
+
+}
+
+/*!--------posiciones---------*/
+
+.glosario {
+    margin: 20px;
+    transition: 2s;
+
+    h2 {
+        background-color: black;
+        width: 120px;
+    }
+
+    p {
+        color: white;
+    }
 }
